@@ -42,17 +42,17 @@ function Projects(){
     };
 
     return (
-        <div className="projects-container">
+        <section className="section projects-container" id="projects">
             <div className="projects-container-text">
                 <h1>My Projects</h1>
-                <p>Check out some of the porject I did or am currently working on.</p>
+                <p>Check out some of the projects I did or am currently working on.</p>
             </div>
             <div className="projects-grid">
                 <div className="row first">
                     <div className="small-project">
                         <div className="link-icons">
                             <div className="icon">
-                                <BsGithub />
+                                <a href="https://github.com/podgaietska/LibCode" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
                         </div>
                         <div className="project-info libcode">
@@ -75,10 +75,10 @@ function Projects(){
                     <div className="large-project">
                         <div className="link-icons">
                             <div className="icon">
-                                <BsGithub />
+                                <a href="https://github.com/podgaietska/Ecommerce-Fullstack-App" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
                             <div className="icon">
-                                <BsPlayFill />
+                                <a href="https://illustrious-pony-215af5.netlify.app/" target="_blank" rel="noopener noreferrer"><BsPlayFill /></a>
                             </div>
                         </div>
                         <div className="project-info">
@@ -115,10 +115,10 @@ function Projects(){
                     <div className="large-project">
                         <div className="link-icons">
                             <div className="icon">
-                                <BsGithub />
+                                <a href="https://github.com/podgaietska/SmartMeal-Fullstack-App" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
                             <div className="icon">
-                                <BsPlayFill />
+                                <a href="https://taupe-dieffenbachia-d5d916.netlify.app/" target="_blank" rel="noopener noreferrer"><BsPlayFill /></a>
                             </div>
                         </div>
                         <div className="project-info">
@@ -148,7 +148,7 @@ function Projects(){
                     <div className="small-project">
                         <div className="link-icons seu">
                             <div className="icon">
-                                <BsGithub />
+                                <a href="https://github.com/studentenergyuofc/seucalgary-website" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
                         </div>   
                         <div className="project-info seu">
@@ -169,7 +169,7 @@ function Projects(){
                     <div className="small-project">
                         <div className="link-icons">
                             <div className="icon">
-                                <BsGithub />
+                                <a href="https://github.com/podgaietska/GradeTracker-Fullstack-App" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
                         </div>
                         <div className="project-info gradetracker">
@@ -184,7 +184,7 @@ function Projects(){
                         <div className="project-info">
                             <div className="link-icons">
                                 <div className="icon">
-                                    <BsGithub />
+                                    <a href="https://github.com/podgaietska/Automated-Schedule-Generator" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                                 </div>
                             </div>
                             <h1>Automated Weekly Schedule Generator</h1>
@@ -200,7 +200,7 @@ function Projects(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

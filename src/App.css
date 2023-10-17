@@ -9,7 +9,11 @@
   margin: 0;
   padding: 0;
   background: var(--background);
-  overflow: hidden;
+}
+
+
+html{
+  scroll-behavior: smooth;
 }
 
 p, h1, h2, h3, h4{
@@ -19,6 +23,13 @@ p, h1, h2, h3, h4{
 
 li{
   list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header styles */
@@ -47,6 +58,16 @@ li{
   align-items: center;
   padding: 0 2rem;
   border-radius: 1.5rem;
+  transition: all 0.3s ease; 
+}
+
+.section-indicator{
+  height: 2.1rem;
+  width: 80px;
+  border-radius: 1.2rem;
+  background: rgba(172, 172, 172, 0.2);
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
 }
 
 /* About Section */
@@ -64,16 +85,14 @@ li{
 
 .about-container{
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
-  position: sticky;
-  top: 0;
   margin-bottom: 2rem;
 }
 
 .about-container .left-container{
-  height: 90%;
+  height: 100%;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -157,6 +176,7 @@ li{
   height: fit-content;
   display: flex;
   flex-direction: column;
+  padding: 4rem 0;
 }
 
 
@@ -270,7 +290,7 @@ li{
   right: 2rem;
 }
 
-.link-icons .icon{
+.link-icons a{
   font-size: 2rem;
   padding: 0.4rem;
   background: rgba(255, 255, 255, 0.5);
@@ -283,7 +303,7 @@ li{
   cursor: pointer;
 }
 
-.link-icons.seu .icon{
+.link-icons.seu a{
   background: var(--lightgrey);
 }
 
@@ -357,7 +377,6 @@ li{
   bottom: -1rem;
   left: -8rem;
   transform-origin: center;
-  background: red;
 }
 
 .seu-website-image img{
@@ -375,7 +394,6 @@ li{
   bottom: -1rem;
   left: 15%;
   transform-origin: center;
-  background: red;
 }
 
 .gradetracker-image img{
@@ -424,7 +442,7 @@ li{
 
 .skills-container{
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }

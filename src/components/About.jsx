@@ -8,9 +8,7 @@ import {BiLogoGithub, BiLogoLinkedinSquare} from 'react-icons/bi';
 function About(){
     const [cardOneAnimation, setCardOneAnimation] = useState({ y: 0, x: 0 });
     const [cardTwoAnimation, setCardTwoAnimation] = useState({ y: 0, x: 0 });
-    const [cardThreeAnimation, setCardThreeAnimation] = useState({ y: 0, x: 0 });
     const [cardFourAnimation, setCardFourAnimation] = useState({ y: 0 });
-    const [containerAnimation, setContainerAnimation] = useState({ y: 0 });
 
 
     const [text] = useTypewriter({
@@ -27,20 +25,14 @@ function About(){
       useEffect(() => {
         function handleScroll() {
             const htmlElement = document.documentElement;
-            const totalHeight = htmlElement.scrollHeight - htmlElement.clientHeight;
             const amountScrolled = htmlElement.scrollTop;
 
-            const scrollPercentage = (amountScrolled / totalHeight) * 100;
-
-            const moveUpAmount = -amountScrolled * 0.1;
-            const moveUpAmountTwo = -amountScrolled * 1.6;
-            const moveUpAmpuntThree = -amountScrolled * 0.5;
-            const moveUpAmountFour = -amountScrolled * 0.3;
+            const moveUpAmount = -amountScrolled * 0.5;
+            const moveUpAmountTwo = -amountScrolled * 0.3;
+            const moveUpAmountFour = -amountScrolled * 0.2;
             setCardOneAnimation({ y: moveUpAmount, x: -amountScrolled * 0.2});
-            setCardTwoAnimation({ y: moveUpAmountTwo, x: amountScrolled * 0.5});
-            setCardThreeAnimation({ y: moveUpAmpuntThree, x: amountScrolled * 0.2});
+            setCardTwoAnimation({ y: moveUpAmountTwo, x: amountScrolled * 0.1});
             setCardFourAnimation({ y: moveUpAmountFour});
-            setContainerAnimation({ y: -amountScrolled * 0.8})
         }
 
         window.addEventListener("scroll", handleScroll);
@@ -51,7 +43,7 @@ function About(){
     }, []);
 
     return(
-        <motion.div className="about-container" animate={containerAnimation} >
+        <section className="about-container section" id="about">
             <div className="left-container">
                 <h1>Hi, I'm Mariia &#x1F44B;</h1>
                 <p>
@@ -70,13 +62,13 @@ function About(){
                 <motion.div className="card-container four" animate={cardFourAnimation} >
                     <p>Useful resources</p>
                     <div className="about-icons">
-                        <BiLogoLinkedinSquare className="icon"/>
-                        <BiLogoGithub className="icon"/>
-                        <HiOutlineDocumentText className="icon"/>
+                        <a href="https://github.com/podgaietska" target="_blank" rel="noopener noreferrer"><BiLogoGithub className="icon"/></a>
+                        <a href="https://www.linkedin.com/in/podgaietska/" target="_blank" rel="noopener noreferrer"><BiLogoLinkedinSquare className="icon"/></a>
+                        <a><HiOutlineDocumentText className="icon"/></a>
                     </div>
                 </motion.div>
             </div>
-        </motion.div>
+        </section>
     )
 }
 

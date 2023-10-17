@@ -3,16 +3,16 @@ import {BiLogoGithub, BiLogoLinkedinSquare} from 'react-icons/bi';
 
 function Contact(){
     return (
-        <div className="contact-container">
+        <section className="contact-container section" id="contact">
             <h3>Contact Me</h3>
             <p>Send me an email at podgaietska.m@gmail.com</p>
             <div className="other-links">
-                <BiLogoGithub className="icon"/>
-                <BiLogoLinkedinSquare className="icon"/>
-                <HiOutlineDocumentText className="icon"/>
+                <a href="https://github.com/podgaietska" target="_blank" rel="noopener noreferrer"><BiLogoGithub className="icon"/></a>
+                <a href="https://www.linkedin.com/in/podgaietska/" target="_blank" rel="noopener noreferrer"><BiLogoLinkedinSquare className="icon"/></a>
+                <a href="https://www.linkedin.com/in/podgaietska/" target="_blank" rel="noopener noreferrer"><HiOutlineDocumentText className="icon"/></a>
             </div>
-            <p className="rights">© 2023 Podgaietska. All rights reserved.</p>
-        </div>
+            <p className="rights">© 2023 podgaietska. All rights reserved.</p>
+        </section>
     )
 }
 

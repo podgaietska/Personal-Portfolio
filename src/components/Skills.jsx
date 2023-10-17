@@ -18,7 +18,7 @@ function Skills(){
     };
 
     return(
-        <div className="skills-container">
+        <section className="skills-container section" id="skills">
             <div className="skills-container-text">
                 <h1>My Skills</h1>
             </div>
@@ -42,7 +42,7 @@ function Skills(){
                 }
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
