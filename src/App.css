@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   background: var(--background);
+  overflow: hidden;
 }
 
 
@@ -80,7 +81,7 @@ a{
 .about-icons .icon{
   margin-left: 0.5rem;
   cursor: pointer;
-  color:#03C5FF
+  color: #00B2F9;
 }
 
 .about-container{
@@ -116,7 +117,7 @@ a{
 }
 
 .card-container{
-  padding: 2rem;
+  padding: 2.2rem 2rem;
   line-height: 2rem;
   font-size: 1.2rem;
   height: fit-content;
@@ -135,7 +136,6 @@ a{
   align-items: center;
   background: white;
   color: black;
-
 }
 
 .card-container.two {
@@ -148,7 +148,6 @@ a{
   top:70%;
   left: 35%;
   color: black;
-
 }
 
 .card-container.two p{
@@ -157,17 +156,44 @@ a{
 
 .card-container.four {
   min-height: 10%;
-  width: 20%;
+  width: 30%;
   background: white;
   box-shadow: rgba(126, 127, 127, 0.1) 0px 6px 10px;
   transform: translateY(var(--scroll));
   position: absolute;
-  top: 25%;
+  top: 22%;
   left: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.3rem;
+}
+
+@media screen and (max-width: 800px){
+
+
+  .card-container.four {
+    top: 15%;
+    left: 40%;
+  }
+
+  .card-container.four{
+    text-align: center;
+  }
+
+  .card-container.two {
+    top:75%;
+    left: 35%;
+  }
+
+  .card-container.one {
+    top: 40%;
+    left: 5%;
+
+  }
 }
 
 /* Projects Section */
@@ -176,17 +202,19 @@ a{
   height: fit-content;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 4rem 0;
 }
 
 
 .projects-container-text{
-  width: 100%;
+  width: 80%;
   height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .projects-container-text h1{
@@ -262,6 +290,7 @@ a{
   justify-content: center;
   padding: 0 3rem;
   color: white;
+
 }
 
 .project-info h1{
@@ -438,13 +467,67 @@ a{
   font-size: 2rem;
 }
 
+@media screen and (max-width: 1050px){
+
+  .projects-grid .row{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    height: 51rem;
+  }
+
+  .sliding-images .row{
+    display: flex;
+    flex-direction: row;
+    width: 140%;
+    height: 10rem;
+    overflow-x: hidden;
+    margin-bottom: 0.5rem;
+  }
+  
+  .small-project, .large-project{
+    height: 25rem;
+    width: 85%;  
+  }
+
+  .project-info.seu{
+    width: 80%;
+    align-items: end;
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 720px){
+
+  .link-icons a{
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.8rem;
+    cursor: pointer;
+  }
+
+
+}
+
 /* Skills Section */
 
 .skills-container{
   width: 100%;
-  height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  padding-top: 6rem;
 }
 
 .skills-container-text{
@@ -453,6 +536,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .skills-container-text h1{
@@ -493,7 +577,7 @@ a{
 
 .contact-container{
   width: 100%;
-  height: fit-content;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -501,18 +585,27 @@ a{
   position: relative;
 }
 
-.contact-container h3{
+.contact-container h1{
   margin-bottom: 0.3rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .contact-container p{
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+
+.contact-container span{
+  cursor: pointer;
+}
+
+.email{
+  margin-bottom: 8rem;
+  font-size: 1.3rem !important;
 }
 
 .other-links{
-  margin-top: 2rem;
-  margin-bottom: 9.5rem;
+  margin-top: 1rem;
 }
 
 .other-links .icon{

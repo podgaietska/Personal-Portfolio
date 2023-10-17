@@ -15,8 +15,6 @@ function About(){
         words: [
             "SWE Student",
             "Full-stack Developer",
-            "Web Developer",
-            "Software Engineer"
         ],
         loop: true,
         deleteSpeed: 50,
@@ -48,19 +46,19 @@ function About(){
                 <h1>Hi, I'm Mariia &#x1F44B;</h1>
                 <p>
                     I am a{" "}
-                    <span style={{ color: "#03C5FF" }}>{text}</span>
+                    <span style={{ color: "#00B2F9" }}>{text}</span>
                     <Cursor />
                 </p>
             </div>
             <div className="right-container">
                 <motion.div className="card-container one" animate={cardOneAnimation} >
-                    <p>I am a 3rd year Software Engineering Student at University of Calgary &#x1F469; &#x1F4BB; &#x1F917;</p>
+                    <p>I am a 3rd year Software Engineering Student at University of Calgary <br/>&#x1F469; &#x1F4BB; &#x1F917;</p>
                 </motion.div>
                 <motion.div className="card-container two" animate={cardTwoAnimation} >
                     <p>Scroll down to see what I kind of things I do &#x1F447;</p>
                 </motion.div>
                 <motion.div className="card-container four" animate={cardFourAnimation} >
-                    <p>Useful resources</p>
+                    <p>Get to know me a bit better:</p>
                     <div className="about-icons">
                         <a href="https://github.com/podgaietska" target="_blank" rel="noopener noreferrer"><BiLogoGithub className="icon"/></a>
                         <a href="https://www.linkedin.com/in/podgaietska/" target="_blank" rel="noopener noreferrer"><BiLogoLinkedinSquare className="icon"/></a>

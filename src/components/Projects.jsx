@@ -67,7 +67,6 @@ function Projects(){
                             x: -20,
                             y: -5,
                         }}
-                        // whileInView="animate"
                         >
                             <img src="/linked-list3.png" alt="data-structures" />
                         </motion.div>
@@ -82,7 +81,7 @@ function Projects(){
                             </div>
                         </div>
                         <div className="project-info">
-                            <h1>Vektor - a full-stack Ecommerce Website</h1>
+                            <h1>Vektor - full-stack Ecommerce Website</h1>
                             <p>MongoDB, Express.js, React.js, Node.js</p>
                         </div>
                         <div className="sliding-images">
@@ -174,7 +173,7 @@ function Projects(){
                         </div>
                         <div className="project-info gradetracker">
                             <h1>GradeTracker - a full-stack app for tracking uni progress</h1>
-                            <p>Django, PostgreSQL</p>
+                            <p>Django, PostgreSQL, HTML, CSS, JavaScript</p>
                         </div>
                         <div className="gradetracker-image">
                             <img src="/gradetracker.webp" alt="gradetracker" />
