@@ -354,6 +354,7 @@ a{
 .sliding-images .row{
   display: flex;
   flex-direction: row;
+  max-width: 120%;
   width: 120%;
   height: 10rem;
   overflow-x: hidden;
@@ -362,7 +363,8 @@ a{
 
 .sliding-images .row .image{
   height: 100%;
-  width: 80%;
+  width: 35%;
+  max-width: 35%;
   border-radius: 1rem;
   box-shadow: rgba(126, 127, 127, 0.1) 0px 6px 10px;
   background: white;
@@ -371,6 +373,13 @@ a{
 }
 
 .sliding-images .row .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.placeholder-img{
   height: 100%;
   width: 100%;
   object-fit: cover;

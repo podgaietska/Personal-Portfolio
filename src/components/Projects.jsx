@@ -1,9 +1,9 @@
 import { BsGithub, BsPlayFill } from 'react-icons/bs';
 import { useScroll, useTransform, motion } from "framer-motion";
-
+import ImgComponent from './ImgComponent';
 
 function Projects(){
-    const smartMealImgs = [{type: 'dark-mode-image', img:'/smartmeal1.webp'}, {type: 'light-mode-image', img:'/smartmeals3.webp'}]
+    const smartMealImgs = [{type: 'dark-mode-image', img:'/smartmeal1.webp', blurhash: 'L071fwxu%M-;S#xuxuoz-;bHt7ba'}, {type: 'light-mode-image', img:'/smartmeals3.webp', blurhash:'L0SigQ8_00D%~qj[D%D%8_%MIU%L'}]
     const { scrollYProgress } = useScroll();
 
     const fadeInAnimationVariants = {
@@ -89,24 +89,24 @@ function Projects(){
                         <div className="sliding-images">
                                 <motion.div className="row" style={{ x : useTransform(scrollYProgress, [0, 1], [-180, 80]) }}>
                                     <div className="image">
-                                        <img src="/vektor1.webp" alt="vektor1" />
+                                        <ImgComponent src={'/vektor1.webp'} width={500} height={350} blurhash={'LmPj46_NniR*IonO%MjbDi%MoLRj'}/>
                                     </div>
                                     <div className="image">
-                                        <img src="/vektor2.webp" alt="vektor2" />
+                                        <ImgComponent src={'/vektor2.webp'} width={500} height={350} blurhash={'LWQ0XG~qRjIU_3D$ofxux]WBkCWV'}/>
                                     </div>
                                     <div className="image">
-                                        <img src="/vektor3.webp" alt="vektor3" />
+                                        <ImgComponent src={'/vektor3.webp'} width={150} height={350} blurhash={'LNRC#w-nyEyE-;j[ofR*_ME3R4n4'}/>
                                     </div>
                                 </motion.div>
                                 <motion.div className="row" style={{ x : useTransform(scrollYProgress, [0, 1], [30, -80]) }}>
                                     <div className="image">
-                                        <img src="/vektor4.webp" alt="vektor4" />
+                                        <ImgComponent src={'/vektor4.webp'} width={500} height={350} blurhash={'LKS60+8wR5%#yDtlbHV@.m%~kWR5'}/>
                                     </div>
                                     <div className="image">
-                                        <img src="/vektor5.webp" alt="vektor5" />
+                                        <ImgComponent src={'/vektor5.webp'} width={500} height={350} blurhash={'LRR3QO?c~q00%2a}RjoL_4IUD%-;'}/>
                                     </div>
                                     <div className="image">
-                                        <img src="/vektor6.webp" alt="vektor6" />
+                                        <ImgComponent src={'/vektor6.webp'} width={150} height={350} blurhash={'LcPst{WB?Hof%MWBayoL_NofIUWB'}/>
                                     </div>
                                 </motion.div>
                         </div>
@@ -140,7 +140,7 @@ function Projects(){
                                 }}
                                 custom={index}
                                 >
-                                    <img src={image.img} alt="smartmeal2" />
+                                    <ImgComponent src={image.img} width={550} height={500} blurhash={image.blurhash}/>
                                 </motion.div>
                                 )
                             })
@@ -164,7 +164,7 @@ function Projects(){
                         initial="initial"
                         whileInView="animate"
                         >
-                            <img src="/seu-website.webp" alt="seu-website" />
+                            <ImgComponent src={'/seu-website.webp'} width={550} height={500} blurhash={'LRFP?M~V%LM{004:IUxu-;%Mt6WB'}/>
                         </motion.div>
                     </div>
                 </div>
