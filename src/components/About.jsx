@@ -55,7 +55,7 @@ function About(){
                     <p>I am a 3rd year Software Engineering Student at University of Calgary <br/>&#x1F469; &#x1F4BB; &#x1F917;</p>
                 </motion.div>
                 <motion.div className="card-container two" animate={cardTwoAnimation} >
-                    <p>Scroll down to see what I kind of things I do &#x1F447;</p>
+                    <p>Scroll down and check out my projects &#x1F447;</p>
                 </motion.div>
                 <motion.div className="card-container four" animate={cardFourAnimation} >
                     <p>Get to know me a bit better:</p>
