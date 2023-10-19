@@ -13,7 +13,6 @@ function App() {
     const callback = (entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-              console.log(entry.target.id);
                 setActiveSection(entry.target.id);
             }
         });
