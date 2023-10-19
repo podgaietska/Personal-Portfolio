@@ -517,14 +517,20 @@ a{
     height: 57rem;
   }
 
+  .sliding-images{
+    position: absolute;
+    bottom: -3rem;
+  }
+
   .sliding-images .row{
     display: flex;
     flex-direction: row;
-    width: 140%;
+    width: 150%;
     height: 8rem;
     overflow-x: hidden;
     margin-bottom: 0.5rem;
   }
+
   
   .small-project, .large-project{
     height: 28rem;
