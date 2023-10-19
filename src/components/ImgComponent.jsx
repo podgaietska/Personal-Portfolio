@@ -12,8 +12,6 @@ function ImgComponent({src, width, height, blurhash}){
         img.src = src;
     }, [src]);
 
-    console.log(imageLoaded)
-
     return ( 
         <>
             <div style={{display: imageLoaded ? "none" : "inline"}} className="placeholder-img">
