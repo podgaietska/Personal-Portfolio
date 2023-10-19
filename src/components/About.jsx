@@ -62,7 +62,6 @@ function About(){
                     <div className="about-icons">
                         <a href="https://github.com/podgaietska" target="_blank" rel="noopener noreferrer"><BiLogoGithub className="icon"/></a>
                         <a href="https://www.linkedin.com/in/podgaietska/" target="_blank" rel="noopener noreferrer"><BiLogoLinkedinSquare className="icon"/></a>
-                        <a><HiOutlineDocumentText className="icon"/></a>
                     </div>
                 </motion.div>
             </div>
