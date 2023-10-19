@@ -1,7 +1,6 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import {HiOutlineDocumentText} from 'react-icons/hi';
 import {BiLogoGithub, BiLogoLinkedinSquare} from 'react-icons/bi';
 
 
@@ -58,7 +57,7 @@ function About(){
                     <p>Scroll down and check out my projects &#x1F447;</p>
                 </motion.div>
                 <motion.div className="card-container four" animate={cardFourAnimation} >
-                    <p>Get to know me a bit better:</p>
+                    <p>Get to know me a bit better through:</p>
                     <div className="about-icons">
                         <a href="https://github.com/podgaietska" target="_blank" rel="noopener noreferrer"><BiLogoGithub className="icon"/></a>
                         <a href="https://www.linkedin.com/in/podgaietska/" target="_blank" rel="noopener noreferrer"><BiLogoLinkedinSquare className="icon"/></a>
