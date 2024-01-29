@@ -237,6 +237,21 @@ a{
     font-size: 1.2rem;
   }
 
+  .nav-container{
+    width: 15rem;
+    height: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  .section-indicator{
+    height: 2.1rem;
+    width: 70px;
+    border-radius: 1.2rem;
+    background: rgba(172, 172, 172, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+  }
+
 }
 
 @media screen and (max-width: 400px){

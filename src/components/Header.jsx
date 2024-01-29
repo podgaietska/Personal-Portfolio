@@ -1,20 +1,17 @@
 import { motion } from 'framer-motion';
 
-function Header({activeSection}){
+function Header({activeSection, aboutPosition, projectsPosition, skillsPosition, contactPosition}){
 
     function getIndicatorPosition(activeSection) {
         switch (activeSection) {
             case "about":
-                return -18;
+                return aboutPosition;
             case "projects":
-            // Return appropriate x position
-                return 73;
+                return projectsPosition;
             case "skills":
-            // Return appropriate x position
-                return 160;
+                return skillsPosition;
             case "contact":
-            // Return appropriate x position
-                return 250;
+                return contactPosition;
             default:
                 return 0;
         }
