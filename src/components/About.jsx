@@ -23,7 +23,6 @@ function About(){
         function handleScroll() {
             const htmlElement = document.documentElement;
             const amountScrolled = htmlElement.scrollTop;
-
             const moveUpAmount = -amountScrolled * 0.5;
             const moveUpAmountTwo = -amountScrolled * 0.3;
             const moveUpAmountFour = -amountScrolled * 0.2;
@@ -56,7 +55,7 @@ function About(){
                 <motion.div className="card-container two" animate={cardTwoAnimation} >
                     <p>Scroll down and check out my projects &#x1F447;</p>
                 </motion.div>
-                <motion.div className="card-container four" animate={cardFourAnimation} >
+                <motion.div className="card-container three" animate={cardFourAnimation} >
                     <p>Get to know me a bit better through:</p>
                     <div className="about-icons">
                         <a href="https://github.com/podgaietska" target="_blank" rel="noopener noreferrer"><BiLogoGithub className="icon"/></a>
