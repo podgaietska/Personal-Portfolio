@@ -130,10 +130,13 @@ function Projects(){
                             <div className="icon">
                                 <a href="https://github.com/studentenergyuofc/seucalgary-website" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
+                            <div className="icon">
+                                <a href="https://studentenergyuofc.org/" target="_blank" rel="noopener noreferrer"><BsPlayFill /></a>
+                            </div>
                         </div>   
                         <div className="project-info">
-                            <h1>SEU Official Website</h1>
-                            <p className="project-description">The official website for Student Energy at UofC</p>
+                            <h1>SEUC Website</h1>
+                            <p className="project-description">The official website for Student Energy at UofC.</p>
                             <p className="techstack">React.js, Typescript</p>
                         </div>
                         <div className="seu-website-image">
@@ -181,7 +184,7 @@ function Projects(){
                     <div className="large-project airline">
                         <div className="link-icons">
                             <div className="icon">
-                                <a href="https://github.com/podgaietska/SmartMeal-Fullstack-App" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
+                                <a href="https://github.com/podgaietska/AirlineSystem-Backend" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
                         </div>
                         <div className="project-info java airline">

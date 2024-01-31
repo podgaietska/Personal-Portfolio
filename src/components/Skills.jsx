@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 function Skills(){
-    const skills = ['Python', 'JavaScript', 'TypeScript', 'C', 'C++', 'Java', 'HTML', 'CSS', 'Bootstrap', 'React.js', 'Django', 'Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'MySQL', 'DynamoDB', 'Terraform', 'AWS', 'REST', 'Git', 'Docker']
+    const skills = ['Python', 'JavaScript', 'TypeScript', 'C', 'C++', 'Java', 'HTML', 'CSS', 'Bootstrap', 'React.js', 'Django', 'Spring Boot', 'Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'MySQL', 'DynamoDB', 'Terraform', 'AWS', 'REST', 'Git', 'Docker']
 
     const fadeInAnimationVariants = {
         initial: {

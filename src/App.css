@@ -723,6 +723,11 @@ a{
 
 @media screen and (max-width: 440px){
 
+  .link-icons a{
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
+
   .project-info{
     width: 80%;
     padding: 2.5rem 1rem 0 2rem;
@@ -766,8 +771,18 @@ a{
     height: 200px;
   }
 
+
   .large-project.java .project-info{
     width: 70%;
+  }
+
+  .small-project.seu .project-info h1{
+    width: 60%;
+    text-align: end;
+  }
+
+  .small-project.seu .project-description{
+    width: 80%;
   }
 
   .projects-container{
@@ -794,7 +809,7 @@ a{
   .moving-text-container{
     width: 900%;
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     left: -25%;
   }
 }
