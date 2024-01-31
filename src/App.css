@@ -269,7 +269,7 @@ a{
   }
 
   .card-container.three {
-    top: -12%;
+    top: -18%;
   }
 }
 
@@ -990,6 +990,11 @@ a{
   .contact-container h1{
     font-size: 2.6rem;
   }
+
+  .email{
+    font-size: 1.1rem !important;
+  }
+  
 
   .contact-container{
     height: 60vh;
