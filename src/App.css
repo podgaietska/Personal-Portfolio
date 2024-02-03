@@ -251,7 +251,17 @@ a{
     transition: transform 0.3s ease-in-out;
     position: absolute;
   }
+}
 
+@media screen and (min-width: 1800px){
+  .card-container{
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+
+  .about-container .left-container{
+    margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 400px){
@@ -610,6 +620,22 @@ a{
   font-size: 2rem;
 }
 
+@media screen and (min-width: 1800px){
+  .sliding-images .row{
+    width: 150%;
+  }
+
+  .seu-website-image{
+    height: 18rem;
+    width: 35rem;
+    position: relative;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -1rem;
+    left: -5rem;
+    transform: rotate(15deg);
+  }
+}
 @media screen and (max-width: 1050px){
 
   .projects-grid .row{
@@ -891,6 +917,13 @@ a{
   justify-content: center;
   font-size: 1.2rem;
   color: var(--greytext);
+}
+
+@media screen and (min-width: 1800px){
+
+  .skills-container{
+    min-height: 50vh;
+  }
 }
 
 @media screen and (max-width: 940px){

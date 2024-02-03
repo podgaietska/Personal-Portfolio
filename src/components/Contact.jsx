@@ -4,7 +4,7 @@ function Contact(){
     return (
         <section className="contact-container section" id="contact">
             <h1>Contact Me</h1>
-            <p className="email">Get in touch with me through <a href="mailto:podgaietska.m@gmail.com" style={{ color: "#00B2F9", cursor: "pointer"}}>email</a>!</p>
+            <p className="email">Get in touch with me through <a href="mailto:podgaietska.m@gmail.com" style={{ color: "#00B2F9", cursor: "pointer"}}>email</a>.</p>
             <p>Or find me on:</p>
             <div className="other-links">
                 <a href="https://github.com/podgaietska" target="_blank" rel="noopener noreferrer"><BiLogoGithub className="icon"/></a>

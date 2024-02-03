@@ -26,7 +26,7 @@ function Projects(){
         <section className="section projects-container" id="projects">
             <div className="projects-container-text">
                 <h1>My Projects</h1>
-                <p>A compilation of some projects that I created, was a part of developing or am currently working on</p>
+                <p>A compilation of some projects that I created, was a part of developing or am currently working on.</p>
             </div>
             <div className="projects-grid">
                 <div className="row first">
