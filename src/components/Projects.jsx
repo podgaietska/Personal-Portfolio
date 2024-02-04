@@ -58,9 +58,9 @@ function Projects(){
                             <div className="icon">
                                 <a href="https://github.com/podgaietska/Ecommerce-Fullstack-App" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
-                            <div className="icon">
+                            {/* <div className="icon">
                                 <a href="https://illustrious-pony-215af5.netlify.app/" target="_blank" rel="noopener noreferrer"><BsPlayFill /></a>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="project-info">
                             <h1>E-commerce Website</h1>
@@ -99,9 +99,9 @@ function Projects(){
                             <div className="icon">
                                 <a href="https://github.com/podgaietska/SmartMeal-Fullstack-App" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                             </div>
-                            <div className="icon">
+                            {/* <div className="icon">
                                 <a href="https://taupe-dieffenbachia-d5d916.netlify.app/" target="_blank" rel="noopener noreferrer"><BsPlayFill /></a>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="project-info smartmeal">
                             <h1>SmartMeal</h1>
