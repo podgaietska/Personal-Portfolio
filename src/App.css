@@ -1,6 +1,6 @@
-:root{
-  --background: #F8F8F8;
-  --lightgrey: #E6E6E6;
+:root {
+  --background: #f8f8f8;
+  --lightgrey: #e6e6e6;
   --grey: #d1d1d1;
   --greytext: rgb(125, 125, 125);
 }
@@ -12,21 +12,24 @@
   overflow: hidden;
 }
 
-
-html{
+html {
   scroll-behavior: smooth;
 }
 
-p, h1, h2, h3, h4{
+p,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
   margin: 0;
@@ -34,7 +37,7 @@ a{
 }
 
 /* Header styles */
-.app-header{
+.app-header {
   width: 100%;
   height: 5rem;
   position: fixed;
@@ -47,7 +50,7 @@ a{
   z-index: 100;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   flex-direction: row;
   width: 20rem;
@@ -59,10 +62,10 @@ a{
   align-items: center;
   padding: 0 2rem;
   border-radius: 1.5rem;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
-.section-indicator{
+.section-indicator {
   height: 2.1rem;
   width: 80px;
   border-radius: 1.2rem;
@@ -73,23 +76,23 @@ a{
 
 /* About Section */
 
-.about-icons{
+.about-icons {
   font-size: 2rem;
   margin-top: 0.5rem;
 }
 
-.about-icons .icon{
+.about-icons .icon {
   margin-left: 0.5rem;
   cursor: pointer;
-  color: #00B2F9;
+  color: #00b2f9;
   transition: all 0.3s ease;
 }
 
-.about-icons .icon:hover{
+.about-icons .icon:hover {
   color: #029edb;
 }
 
-.about-container{
+.about-container {
   width: 100%;
   height: 90vh;
   display: flex;
@@ -97,7 +100,7 @@ a{
   margin-bottom: 2rem;
 }
 
-.about-container .left-container{
+.about-container .left-container {
   height: 100%;
   width: 40%;
   display: flex;
@@ -107,22 +110,23 @@ a{
   margin-left: 5%;
 }
 
-.about-container .left-container h1{
+.about-container .left-container h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.about-container .left-container p, .about-container .left-container span{
+.about-container .left-container p,
+.about-container .left-container span {
   font-size: 1.5rem;
 }
 
-.about-container .right-container{
+.about-container .right-container {
   width: 60%;
   height: 100%;
   position: relative;
 }
 
-.card-container{
+.card-container {
   padding: 2.2rem 2rem;
   line-height: 1.8rem;
   font-size: 1.1rem;
@@ -147,7 +151,7 @@ a{
 .card-container.two {
   min-height: 5rem;
   width: 30%;
-  top:70%;
+  top: 70%;
   left: 35%;
 }
 
@@ -163,20 +167,18 @@ a{
   text-align: center;
 }
 
-@media screen and (max-width: 1000px){
-
-
+@media screen and (max-width: 1000px) {
   .card-container.three {
     top: 15%;
     left: 40%;
   }
 
-  .card-container.three{
+  .card-container.three {
     text-align: center;
   }
 
   .card-container.two {
-    top:75%;
+    top: 75%;
     left: 35%;
   }
 
@@ -186,33 +188,31 @@ a{
   }
 }
 
-@media screen and (max-width: 680px){
-
-  .card-container{
+@media screen and (max-width: 680px) {
+  .card-container {
     line-height: 1.5rem;
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 440px){
-  
-  .about-container{
+@media screen and (max-width: 440px) {
+  .about-container {
     flex-direction: column;
     padding: 1rem;
     padding-top: 4rem;
   }
 
-  .about-container .left-container{
+  .about-container .left-container {
     width: 80%;
-    height: 35rem;  
+    height: 35rem;
     align-items: center;
   }
 
-  .about-container .left-container h1{
+  .about-container .left-container h1 {
     font-size: 2.5rem;
   }
 
-  .about-container .right-container{
+  .about-container .right-container {
     width: 100%;
   }
 
@@ -232,18 +232,18 @@ a{
     width: 50%;
   }
 
-  .card-container{
+  .card-container {
     line-height: 1.6rem;
     font-size: 1.2rem;
   }
 
-  .nav-container{
+  .nav-container {
     width: 15rem;
     height: 3rem;
     font-size: 0.9rem;
   }
-  
-  .section-indicator{
+
+  .section-indicator {
     height: 2.1rem;
     width: 70px;
     border-radius: 1.2rem;
@@ -253,19 +253,19 @@ a{
   }
 }
 
-@media screen and (min-width: 1800px){
-  .card-container{
+@media screen and (min-width: 1800px) {
+  .card-container {
     line-height: 2rem;
     font-size: 1.3rem;
   }
 
-  .about-container .left-container{
+  .about-container .left-container {
     margin-left: 10%;
   }
 }
 
-@media screen and (max-width: 400px){
-  .card-container{
+@media screen and (max-width: 400px) {
+  .card-container {
     line-height: 1.4rem;
     font-size: 1rem;
   }
@@ -283,8 +283,8 @@ a{
   }
 }
 
-@media screen and (max-width: 380px){
-  .card-container{
+@media screen and (max-width: 380px) {
+  .card-container {
     line-height: 1.2rem;
     font-size: 0.8rem;
   }
@@ -292,11 +292,10 @@ a{
   .card-container.three {
     top: -15%;
   }
-
 }
 
 /* Projects Section */
-.projects-container{
+.projects-container {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -305,8 +304,7 @@ a{
   padding: 4rem 0 2rem 0;
 }
 
-
-.projects-container-text{
+.projects-container-text {
   width: 60%;
   height: 20%;
   display: flex;
@@ -317,31 +315,31 @@ a{
   margin-bottom: 3rem;
 }
 
-.projects-container-text h1{
+.projects-container-text h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.projects-container-text p{
+.projects-container-text p {
   font-size: 1.5rem;
 }
 
-.project-description{
+.project-description {
   font-size: 1rem;
   margin-bottom: 0.8rem;
 }
 
-.techstack{
+.techstack {
   font-weight: bold;
   font-size: 1rem;
 }
 
-.projects-grid{
+.projects-grid {
   height: fit-content;
   padding: 3rem 2.6rem;
 }
 
-.projects-grid .row{
+.projects-grid .row {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -350,54 +348,58 @@ a{
   margin-bottom: 0.8rem;
 }
 
-.small-project, .large-project{
+.small-project,
+.large-project {
   border-radius: 2rem;
   box-shadow: rgba(126, 127, 127, 0.1) 0px 6px 10px;
   position: relative;
   overflow: hidden;
 }
 
-.small-project{
+.small-project {
   height: 30rem;
-  width: 38%;  
+  width: 38%;
 }
 
-.large-project{
+.large-project {
   height: 30rem;
   width: 60%;
 }
 
-.first.row .large-project{
-  background-image: linear-gradient(to bottom left, #6E00FF, #D709FF);
+.first.row .small-project {
+  background-image: linear-gradient(to bottom, #03c5ff, #009af9);
+}
+
+.first.row .large-project {
+  background-image: linear-gradient(to bottom left, #6e00ff, #d709ff);
   position: relative;
 }
 
-.first.row .small-project{
-  background-image: linear-gradient(to bottom, #03C5FF, #009AF9);
+.second.row .large-project {
+  background-image: linear-gradient(to bottom right, #3c1aff, #4de8f8);
 }
 
-.second.row .small-project{
+.second.row .small-project {
   background: white;
 }
 
-.second.row .large-project{
-  background-image: linear-gradient(to bottom right, #3C1AFF, #4DE8F8);
-
+.third.row .small-project {
+  background-image: linear-gradient(to bottom right, #00b2f9, #43fd86);
 }
 
-.third.row .large-project{
-  background-image: linear-gradient(to right, #8618FF, #AA39E3);
+.third.row .large-project {
+  background-image: linear-gradient(to right, #8618ff, #aa39e3);
 }
 
-.third.row .small-project{
-  background-image: linear-gradient(to bottom right, #00B2F9, #43FD86);
-}
-
-.fourth.row .large-project{
+.fourth.row .large-project {
   background: white;
 }
 
-.project-info{
+.fourth.row .small-project {
+  background-image: linear-gradient(to bottom, #03c5ff, #009af9);
+}
+
+.project-info {
   height: fit-content;
   width: 70%;
   display: flex;
@@ -407,20 +409,20 @@ a{
   color: white;
 }
 
-.project-info h1{
+.project-info h1 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-.large-project.airline .project-info{
+.large-project.airline .project-info {
   color: #0c5f8e;
 }
 
-.small-project.seu .project-info{
-  color: #2E90C8;
+.small-project.seu .project-info {
+  color: #2e90c8;
 }
 
-.link-icons{
+.link-icons {
   height: fit-content;
   width: fit-content;
   display: flex;
@@ -430,7 +432,7 @@ a{
   right: 2rem;
 }
 
-.link-icons a{
+.link-icons a {
   font-size: 2rem;
   padding: 0.4rem;
   background: rgba(255, 255, 255, 0.5);
@@ -444,20 +446,21 @@ a{
   transition: all 0.3s ease;
 }
 
-.link-icons a:hover{
+.link-icons a:hover {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.small-project.seu .link-icons a, .large-project.airline .link-icons a{
+.small-project.seu .link-icons a,
+.large-project.airline .link-icons a {
   background: var(--lightgrey);
 }
 
-.sliding-images{
+.sliding-images {
   position: absolute;
   bottom: -3rem;
 }
 
-.sliding-images .row{
+.sliding-images .row {
   display: flex;
   flex-direction: row;
   width: 120%;
@@ -466,7 +469,7 @@ a{
   margin-bottom: 0.5rem;
 }
 
-.sliding-images .row .image{
+.sliding-images .row .image {
   height: 100%;
   width: 35%;
   border-radius: 1rem;
@@ -476,33 +479,33 @@ a{
   overflow: hidden;
 }
 
-.sliding-images .row .image img{
+.sliding-images .row .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-.placeholder-img{
+.placeholder-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-.smartmeal-images{
+.smartmeal-images {
   height: 80%;
   width: 100%;
   position: relative;
 }
 
-.airline-images{
+.airline-images {
   height: 80%;
   width: 100%;
   position: relative;
 }
 
-.dark-mode-image{
+.dark-mode-image {
   height: 80%;
   width: 500px;
   position: relative;
@@ -512,7 +515,7 @@ a{
   left: 10%;
 }
 
-.first-pic{
+.first-pic {
   height: 75%;
   width: 500px;
   position: relative;
@@ -522,7 +525,7 @@ a{
   left: 10%;
 }
 
-.light-mode-image{
+.light-mode-image {
   height: 90%;
   width: 500px;
   position: relative;
@@ -532,7 +535,7 @@ a{
   left: 30%;
 }
 
-.second-pic{
+.second-pic {
   height: 85%;
   width: 550px;
   position: relative;
@@ -542,15 +545,17 @@ a{
   left: 40%;
 }
 
-.dark-mode-image img, .second-pic img, .light-mode-image img, .first-pic img{
+.dark-mode-image img,
+.second-pic img,
+.light-mode-image img,
+.first-pic img {
   height: 100%;
   width: 100%;
   object-fit: stretch;
   border-radius: 1rem;
 }
 
-
-.seu-website-image{
+.seu-website-image {
   height: 15rem;
   width: 30rem;
   position: relative;
@@ -561,14 +566,15 @@ a{
   transform: rotate(15deg);
 }
 
-.seu-website-image img{
+.seu-website-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-.gradetracker-image{
+.gradetracker-image,
+.chore-share-image {
   height: 250px;
   width: 500px;
   border-radius: 1rem;
@@ -578,54 +584,55 @@ a{
   transform-origin: center;
 }
 
-.gradetracker-image img{
+.gradetracker-image img,
+.chore-share-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-.data-structures-img{
+.data-structures-img {
   height: 50%;
   width: 68%;
   position: absolute;
   bottom: -1rem;
   right: -3rem;
   transform-origin: center;
-
 }
 
-.data-structures-img img{
+.data-structures-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: rgba(126, 127, 127, 0.1) 0px 6px 10px;
-
 }
 
-.moving-text-container{
+.moving-text-container {
   width: 400%;
   position: absolute;
   bottom: 0;
   left: -25%;
 }
 
-.moving-text-container h2, .moving-text-container h1, .moving-text-container h3{
+.moving-text-container h2,
+.moving-text-container h1,
+.moving-text-container h3 {
   color: white;
   opacity: 0.6;
   margin: 0.6rem;
 }
-.moving-text-container h1{
+.moving-text-container h1 {
   font-size: 2rem;
 }
 
-@media screen and (min-width: 1800px){
-  .sliding-images .row{
+@media screen and (min-width: 1800px) {
+  .sliding-images .row {
     width: 150%;
   }
 
-  .seu-website-image{
+  .seu-website-image {
     height: 18rem;
     width: 35rem;
     position: relative;
@@ -636,9 +643,8 @@ a{
     transform: rotate(15deg);
   }
 }
-@media screen and (max-width: 1050px){
-
-  .projects-grid .row{
+@media screen and (max-width: 1050px) {
+  .projects-grid .row {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -648,12 +654,12 @@ a{
     height: fit-content;
   }
 
-  .sliding-images{
+  .sliding-images {
     position: absolute;
     bottom: -3rem;
   }
 
-  .sliding-images .row{
+  .sliding-images .row {
     display: flex;
     flex-direction: row;
     width: 150%;
@@ -662,25 +668,26 @@ a{
     margin-bottom: 0.5rem;
   }
 
-  .small-project, .large-project{
+  .small-project,
+  .large-project {
     height: 28rem;
-    width: 85%;  
+    width: 85%;
     margin-bottom: 2rem;
   }
 
-  .small-project.seu .project-info{
+  .small-project.seu .project-info {
     width: 95%;
     align-items: end;
     padding-left: 0;
     padding-right: 3rem;
   }
 
-  .small-project.seu .project-info .project-description{
+  .small-project.seu .project-info .project-description {
     text-align: end;
     padding-left: 0.5rem;
   }
 
-  .seu-website-image{
+  .seu-website-image {
     height: 18rem;
     width: 35rem;
     position: relative;
@@ -691,127 +698,122 @@ a{
     transform: rotate(15deg);
   }
 
-  .small-project.seu .link-icons{
+  .small-project.seu .link-icons {
     top: 2rem;
     left: 2rem;
   }
-
 }
 
-@media screen and (max-width: 720px){
-
-  .link-icons a{
+@media screen and (max-width: 720px) {
+  .link-icons a {
     font-size: 1.5rem;
     padding: 0.4rem;
     border-radius: 50%;
     margin-left: 0.8rem;
   }
 
-  .small-project.seu .link-icons{
+  .small-project.seu .link-icons {
     top: 2.5rem;
   }
 
-
-  .link-icons{
+  .link-icons {
     top: 2.5rem;
     right: 1.5rem;
   }
 
-  .projects-container-text h1{
+  .projects-container-text h1 {
     font-size: 2.4rem;
     margin-bottom: 1rem;
   }
-  
-  .projects-container-text p{
+
+  .projects-container-text p {
     font-size: 1rem;
   }
 
-  .project-description{
+  .project-description {
     font-size: 0.8rem;
     margin-bottom: 0.8rem;
   }
-  
-  .techstack{
+
+  .techstack {
     font-weight: bold;
     font-size: 0.8rem;
   }
 
-  .project-info h1{
+  .project-info h1 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
-  .large-project.vektor .project-info h1{
+  .large-project.vektor .project-info h1 {
     width: 60%;
   }
-
 }
 
-@media screen and (max-width: 440px){
-
-  .link-icons a{
+@media screen and (max-width: 440px) {
+  .link-icons a {
     font-size: 1.3rem;
     margin-left: 0.5rem;
   }
 
-  .project-info{
+  .project-info {
     width: 80%;
     padding: 2.5rem 1rem 0 2rem;
   }
 
-  .link-icons{
+  .link-icons {
     top: 2rem;
     right: 1rem;
   }
 
-  .small-project.seu .link-icons{
+  .small-project.seu .link-icons {
     top: 2rem;
     left: 1rem;
   }
 
-  .projects-container-text h1{
+  .projects-container-text h1 {
     font-size: 2.6rem;
     margin-bottom: 1rem;
   }
-  
-  .projects-container-text p{
+
+  .projects-container-text p {
     font-size: 1.1rem;
   }
 
-  .small-project, .large-project{
+  .small-project,
+  .large-project {
     height: 26rem;
-    width: 100%;  
+    width: 100%;
   }
 
-  .sliding-images .row{
+  .sliding-images .row {
     height: 7rem;
   }
 
-  .seu-website-image{
+  .seu-website-image {
     height: 15rem;
     width: 25rem;
     left: -4rem;
   }
 
-  .gradetracker-image{
+  .gradetracker-image {
     height: 200px;
   }
 
-
-  .large-project.java .project-info{
+  .large-project.java .project-info {
     width: 70%;
   }
 
-  .small-project.seu .project-info h1{
+  .small-project.seu .project-info h1 {
     width: 60%;
     text-align: end;
   }
 
-  .small-project.seu .project-description{
+  .small-project.seu .project-description {
     width: 80%;
   }
 
-  .projects-container{
+  .projects-container {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -821,18 +823,17 @@ a{
   }
 }
 
-@media screen and (max-width: 400px){
-  
-  .project-info{
+@media screen and (max-width: 400px) {
+  .project-info {
     width: 80%;
     padding: 2.5rem 1rem 0 2rem;
   }
 
-  .large-project.airline .project-info h1{
+  .large-project.airline .project-info h1 {
     width: 60%;
   }
 
-  .moving-text-container{
+  .moving-text-container {
     width: 900%;
     position: absolute;
     bottom: -5%;
@@ -840,34 +841,34 @@ a{
   }
 }
 
-@media screen and (max-width: 380px){
-  .link-icons{
+@media screen and (max-width: 380px) {
+  .link-icons {
     top: 1rem;
     right: 1rem;
   }
 
-  .small-project.seu .link-icons{
+  .small-project.seu .link-icons {
     top: 1rem;
     left: 1rem;
   }
 
-  .projects-container-text h1{
+  .projects-container-text h1 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
   }
-  
-  .projects-container-text p{
+
+  .projects-container-text p {
     font-size: 1rem;
   }
 
-  .project-info{
+  .project-info {
     padding: 1.5rem 1rem 0 2rem;
   }
 }
 
 /* Skills Section */
 
-.skills-container{
+.skills-container {
   width: 100%;
   min-height: 70vh;
   display: flex;
@@ -876,7 +877,7 @@ a{
   padding-top: 6rem;
 }
 
-.skills-container-text{
+.skills-container-text {
   width: 100%;
   height: 30%;
   display: flex;
@@ -885,11 +886,11 @@ a{
   margin-bottom: 5rem;
 }
 
-.skills-container-text h1{
+.skills-container-text h1 {
   font-size: 3rem;
 }
 
-.skills-list-container{
+.skills-list-container {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -898,7 +899,7 @@ a{
   align-items: flex-start;
 }
 
-.skills{
+.skills {
   display: flex;
   flex-direction: row;
   width: 55%;
@@ -906,7 +907,7 @@ a{
   justify-content: center;
 }
 
-.skill{
+.skill {
   padding: 1rem 0.7rem;
   min-width: 2rem;
   width: fit-content;
@@ -919,50 +920,48 @@ a{
   color: var(--greytext);
 }
 
-@media screen and (min-width: 1800px){
-
-  .skills-container{
+@media screen and (min-width: 1800px) {
+  .skills-container {
     min-height: 50vh;
   }
 }
 
-@media screen and (max-width: 940px){
-  .skills-container.section{
+@media screen and (max-width: 940px) {
+  .skills-container.section {
     padding: 4rem 0 0 0;
   }
 
-  .skills{
+  .skills {
     width: 75%;
   }
 }
 
-@media screen and (max-width: 680px){
-
-  .skills{
+@media screen and (max-width: 680px) {
+  .skills {
     width: 85%;
   }
 
-  .skill{
+  .skill {
     min-width: 1.5rem;
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 440px){
-  .skill{
+@media screen and (max-width: 440px) {
+  .skill {
     min-width: 1.5rem;
     font-size: 0.8rem;
     margin: 0.4rem;
   }
 
-  .skills-container-text h1{
+  .skills-container-text h1 {
     font-size: 2.6rem;
   }
 }
 
 /* Contact Section */
 
-.contact-container{
+.contact-container {
   width: 100%;
   height: 80vh;
   display: flex;
@@ -972,41 +971,41 @@ a{
   position: relative;
 }
 
-.contact-container h1{
+.contact-container h1 {
   margin-bottom: 0.3rem;
   font-size: 3rem;
   margin-bottom: 3rem;
 }
 
-.contact-container p{
+.contact-container p {
   font-size: 1rem;
 }
 
-.contact-container span{
+.contact-container span {
   cursor: pointer;
 }
 
-.email{
+.email {
   margin-bottom: 8rem;
   font-size: 1.3rem !important;
 }
 
-.other-links{
+.other-links {
   margin-top: 1rem;
 }
 
-.other-links .icon{
+.other-links .icon {
   font-size: 2rem;
   margin-left: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.other-links .icon:hover{
+.other-links .icon:hover {
   color: #444444;
 }
 
-.rights{
+.rights {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1019,27 +1018,16 @@ a{
   font-size: 0.7rem !important;
 }
 
-@media screen and (max-width: 440px){
-  .contact-container h1{
+@media screen and (max-width: 440px) {
+  .contact-container h1 {
     font-size: 2.6rem;
   }
 
-  .email{
+  .email {
     font-size: 1.1rem !important;
   }
-  
 
-  .contact-container{
+  .contact-container {
     height: 60vh;
   }
 }
-
-
-
-
-
-
-
-
-
-
