@@ -796,7 +796,8 @@ a {
     left: -4rem;
   }
 
-  .gradetracker-image {
+  .gradetracker-image,
+  .chore-share-image {
     height: 200px;
   }
 
