@@ -296,7 +296,8 @@ function Projects() {
                   }}
                 >
                   Event 1: Message Received - Topic: customer-data | Event 2:
-                  Schema Registered - Topic: events-union
+                  Schema Registered - Topic: events-union | Event 1: Message
+                  Received - Topic: customer-data
                 </motion.h2>
                 <motion.h1
                   style={{
@@ -304,7 +305,8 @@ function Projects() {
                   }}
                 >
                   Event 3: Message Processed - Offset: 1048 | Event 4: Consumer
-                  Acknowledged - Partition: 2
+                  Acknowledged - Partition: 2 | Event 3: Message Processed -
+                  Offset: 1048
                 </motion.h1>
                 <motion.h2
                   style={{
@@ -312,7 +314,8 @@ function Projects() {
                   }}
                 >
                   Event 5: Message Published - Timestamp: 14:32:05 | Event 6:
-                  Message Received - Topic: customer-data
+                  Message Received - Topic: customer-data | Event 5: Message
+                  Published - Timestamp: 14:32:05
                 </motion.h2>
                 <motion.h3
                   style={{
@@ -321,7 +324,8 @@ function Projects() {
                 >
                   Event 3: Message Processed - Offset: 12345 | Event 4: Consumer
                   Acknowledged - Partition: 2 | Event 5: Schema Registered -
-                  Subject: order-value
+                  Subject: order-value | Event 3: Message Processed - Offset:
+                  12345
                 </motion.h3>
                 <motion.h1
                   style={{
@@ -329,7 +333,8 @@ function Projects() {
                   }}
                 >
                   Event 1: Message Received - Topic: customer-data | Event 2:
-                  Schema Registered - Topic: events-union
+                  Schema Registered - Topic: events-union | Event 1: Message
+                  Received - Topic: customer-data
                 </motion.h1>
               </div>
             </div>
