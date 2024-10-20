@@ -9,7 +9,11 @@ function About() {
   const [cardFourAnimation, setCardFourAnimation] = useState({ y: 0 });
 
   const [text] = useTypewriter({
-    words: ["SWE Student", "Full-stack Developer"],
+    words: [
+      "SWE Student at UofC",
+      "VP Software Development at SEUC",
+      "Software Developer Intern at Pason",
+    ],
     loop: true,
     deleteSpeed: 50,
   });
